@@ -18,6 +18,7 @@ Bem-vindo ao repositório **Login Page**! Este projeto está em andamento e visa
 Este projeto está em andamento. Atualmente, estamos trabalhando nas funcionalidades básicas da página de login, como layout responsivo e validação de formulários. A integração com o backend para autenticação será implementada em breve.
 
 🌟 Contribuições
+
 Este projeto é de código aberto e contribuições são bem-vindas! Caso tenha sugestões ou queira ajudar no desenvolvimento, fique à vontade para abrir um pull request ou issue.
 
 Acompanhe o progresso e as atualizações para ver novas funcionalidades sendo implementadas!
