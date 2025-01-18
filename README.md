@@ -13,7 +13,8 @@ Bem-vindo ao repositório **Login Page**! Este projeto está em andamento e visa
 - **JavaScript**: Validação e funcionalidades interativas.
 - Frameworks e bibliotecas adicionais podem ser integrados à medida que o projeto avança.
 
-🚧 Status do Projeto
+🚧 Status do Projeto 
+
 Este projeto está em andamento. Atualmente, estamos trabalhando nas funcionalidades básicas da página de login, como layout responsivo e validação de formulários. A integração com o backend para autenticação será implementada em breve.
 
 🌟 Contribuições
