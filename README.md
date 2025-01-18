@@ -1,27 +1,31 @@
-# LoginPage
+# Login Page 🔐
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+Bem-vindo ao repositório **Login Page**! Este projeto está em andamento e visa a criação de uma página de login funcional e estética, com foco na experiência do usuário e integração com sistemas de autenticação.
 
-## Development server
+## ✨ Funcionalidades (Em andamento)
+- **Página de Login Responsiva**: Layout adaptável para diferentes tamanhos de tela (móveis, tablets e desktops).
+- **Validação de Campos**: Validação de entradas de usuário para garantir a integridade dos dados.
+- **Integração com Backend (Futura Implementação)**: Conexão com servidores para autenticação de usuários.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Tecnologias Utilizadas
+- **HTML5**: Estruturação da página de login.
+- **CSS3**: Estilos modernos e responsivos.
+- **JavaScript**: Validação e funcionalidades interativas.
+- Frameworks e bibliotecas adicionais podem ser integrados à medida que o projeto avança.
 
-## Code scaffolding
+🚧 Status do Projeto
+Este projeto está em andamento. Atualmente, estamos trabalhando nas funcionalidades básicas da página de login, como layout responsivo e validação de formulários. A integração com o backend para autenticação será implementada em breve.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🌟 Contribuições
+Este projeto é de código aberto e contribuições são bem-vindas! Caso tenha sugestões ou queira ajudar no desenvolvimento, fique à vontade para abrir um pull request ou issue.
 
-## Build
+Acompanhe o progresso e as atualizações para ver novas funcionalidades sendo implementadas!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 📂 Estrutura do Projeto
+```plaintext
+login-page/
+│
+├── index.html        # Estrutura da página de login
+├── style.css         # Estilos personalizados para o layout
+├── script.js         # Validações e funções interativas
+└── assets/           # Recursos como imagens e ícones
