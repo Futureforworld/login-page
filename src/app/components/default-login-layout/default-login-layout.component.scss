@@ -47,7 +47,6 @@ main {
             width: 100%;
             gap: 30px;
 
-<<<<<<< HEAD
             .divider {
                 display: flex;
                 align-items: center;
@@ -66,8 +65,6 @@ main {
                 }
             }
 
-=======
->>>>>>> f1a55ba394d61fb9765272db12191ebb22ff42cb
             button {
                 width: 100%;
                 border-radius: 8px;
@@ -76,10 +73,7 @@ main {
                 border: none;
                 background: transparent;
                 padding: 12px 24px;
-<<<<<<< HEAD
                 cursor: pointer;
-=======
->>>>>>> f1a55ba394d61fb9765272db12191ebb22ff42cb
     
                 &.btn-primary {
                    background-color: $primary-color; 
