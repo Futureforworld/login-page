@@ -1,21 +1,46 @@
-﻿<main>
-    <section class="form-section">
-        <img src="assets/svg/logo.svg" alt="">
-        <h2>{{ title }}</h2>
-        <ng-content></ng-content>
-        <div class="btn-wrapper">
-            <button class="btn-primary">{{ primaryBtnText }}</button>
-            <div class="divider">
-            <div></div>
-            <span>OR</span> 
-            <div></div> 
-            </div>
-            <button class="btn-secondary">{{ secondaryBtnText }}</button>
-        </div>
-    </section>
-    <section class="main-section">
-        <h1>You Should, MoveIt!</h1>
-      <img src="assets/svg/main-illustration.svg" alt="">
-    </section>
-</main>
+﻿<main class="login-layout">
+  <section class="form-section">
+    <div class="form-container">
+      <img class="brand-logo" src="assets/svg/logo.svg" alt="MoveIt" />
 
+      <h2>{{ title }}</h2>
+
+      <ng-content></ng-content>
+
+      <div class="btn-wrapper">
+        <button
+          class="btn-primary"
+          type="submit"
+          form="loginForm"
+        >
+          {{ primaryBtnText }}
+        </button>
+
+        <div class="divider">
+          <span></span>
+          <small>ou</small>
+          <span></span>
+        </div>
+
+        <button
+          class="btn-secondary"
+          type="button"
+          disabled
+          title="Cadastro ainda não implementado"
+        >
+          {{ secondaryBtnText }}
+        </button>
+      </div>
+
+      <p class="footer-note">MoveIt!  Sua jornada começa aqui.</p>
+    </div>
+  </section>
+
+  <section class="main-section">
+    <div class="illustration-content">
+      <h1>You Should, MoveIt!</h1>
+      <p>Movimente suas ideias. Supere seus limites.</p>
+      <img src="assets/svg/main-illustration.svg" alt="Pessoa andando de skate" />
+    </div>
+  </section>
+</main>

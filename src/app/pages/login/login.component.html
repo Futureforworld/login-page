@@ -1,12 +1,61 @@
 ﻿<app-default-login-layout
-    title="Login into your account"
-    primaryBtnText="Login Now"
-    secondaryBtnText="Signup Now"
+  title="Entre na sua conta"
+  primaryBtnText="Entrar"
+  secondaryBtnText="Cadastro em breve"
 >
-    <form [formGroup]="loginForm">
-       <app-primary-input>
-        <img src="assets/svg/email-icon.svg" alt="">
-       </app-primary-input>
-    </form>
-</app-default-login-layout>
+  <form id="loginForm" [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="field-group">
+      <label for="email">E-mail</label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        placeholder="Digite seu e-mail"
+        autocomplete="email"
+        [class.invalid]="emailControl.invalid && emailControl.touched"
+      />
 
+      @if (emailControl.touched && emailControl.hasError('required')) {
+        <small class="error-message">Informe seu e-mail.</small>
+      }
+      @if (emailControl.touched && emailControl.hasError('email')) {
+        <small class="error-message">Digite um endereço de e-mail válido.</small>
+      }
+    </div>
+
+    <div class="field-group">
+      <label for="password">Senha</label>
+      <div class="password-field">
+        <input
+          id="password"
+          [type]="showPassword ? 'text' : 'password'"
+          formControlName="password"
+          placeholder="Digite sua senha"
+          autocomplete="current-password"
+          [class.invalid]="passwordControl.invalid && passwordControl.touched"
+        />
+        <button
+          class="toggle-password"
+          type="button"
+          (click)="togglePassword()"
+          [attr.aria-label]="showPassword ? 'Ocultar senha' : 'Mostrar senha'"
+        >
+          {{ showPassword ? 'Ocultar' : 'Mostrar' }}
+        </button>
+      </div>
+
+      @if (passwordControl.touched && passwordControl.hasError('required')) {
+        <small class="error-message">Informe sua senha.</small>
+      }
+      @if (passwordControl.touched && passwordControl.hasError('minlength')) {
+        <small class="error-message">A senha deve ter pelo menos 6 caracteres.</small>
+      }
+    </div>
+
+    @if (successMessage) {
+      <p class="success-message" role="status">{{ successMessage }}</p>
+    }
+
+    <p class="form-note">Ambos os campos são obrigatórios.</p>
+  </form>
+</app-default-login-layout>

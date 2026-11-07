@@ -1,4 +1,87 @@
+﻿:host {
+  display: block;
+  width: 100%;
+}
 
 form {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.field-group label {
+  color: #343044;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.field-group input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 15px;
+  border: 1px solid #ded9e8;
+  border-radius: 8px;
+  outline: none;
+  background: #f7f6fa;
+  color: #292334;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field-group input:focus {
+  border-color: #7001fd;
+  box-shadow: 0 0 0 3px rgba(112, 1, 253, 0.10);
+}
+
+.field-group input.invalid {
+  border-color: #dc3545;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-field input {
+  padding-right: 85px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  border: 0;
+  background: transparent;
+  color: #7001fd;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.form-note {
+  color: #777180;
+  font-size: 12px;
+  text-align: center;
+}
+
+.success-message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #e9f8ef;
+  color: #176b39;
+  font-size: 13px;
+  line-height: 1.5;
 }
